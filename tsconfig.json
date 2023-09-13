@@ -10,8 +10,8 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
-    "strictNullChecks": true,
+    "strict": false,
+    "strictNullChecks": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -22,12 +22,12 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/sd.js", "src/views/Doce/index.tsx", "src/pages/widget/[userName].ㅗ싀", "src/pages/widget/[userName].tsx", "src/views/Remotecontrol/index.tsx", "src/pages/LoginPage.tsx", "src/widgets/widfetspage.tsx", "src/widgets/[userName].tsx"],
+  "exclude": ["node_modules", ".next",],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
 }
