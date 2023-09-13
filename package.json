@@ -25,6 +25,7 @@
     "@solana/web3.js": "^1.78.4",
     "@tailwindcss/typography": "^0.5.9",
     "@typescript-eslint/parser": "^6.6.0",
+    "@web3auth/solana-provider": "^6.1.8",
     "axios": "^1.4.0",
     "bigint-buffer": "^1.1.5",
     "bs58": "^5.0.0",

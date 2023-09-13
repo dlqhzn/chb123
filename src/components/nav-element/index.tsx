@@ -40,11 +40,13 @@ const NavElement = ({
         as={as}
         scroll={scroll}
         passHref
-        className={cn(
+        
+       /* className={cn(
             'group flex flex-col justify-between',
             disabled &&
                 'pointer-events-none cursor-not-allowed opacity-50',
-        )}
+        )}*/
+
         onClick={() => navigationStarts()}
     >
         <div className="items-start mt-8 flex flex-col h-8"> 

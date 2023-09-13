@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { DashboardView } from "../views";
 
+
 const Dashboard: NextPage = (props) => {
   return (
     <div>

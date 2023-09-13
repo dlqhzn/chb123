@@ -6,16 +6,26 @@ import { AppBar } from '../components/AppBar';
 import { ContentContainer } from '../components/ContentContainer';
 import Notifications from '../components/Notification';
 import { useRouter } from 'next/router';
+import Script from "next/script";
 
-
-
+  
 require('@solana/wallet-adapter-react-ui/styles.css');
 require('../styles/globals.css');
 
+
+
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+
+
   const router = useRouter();
   const isIndexPage = router.pathname === '/';
-  const isWidgetsPage = router.pathname.includes('/widgets'); 
+  
+
+  const shouldRenderAppBar = pageProps.AppBar !== "widgets";
+  
+
+  const isWidgetsPage = router.pathname === '/widgets'; 
+
 
   return (
     <>
@@ -23,11 +33,12 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <title>live toon</title>
       </Head>
 
+
       <ContextProvider>
         <div>
           <Notifications />
-          {!isIndexPage && !isWidgetsPage && <AppBar />}
-          <ContentContainer>
+          {shouldRenderAppBar && !isIndexPage && !isWidgetsPage && <AppBar />}
+            <ContentContainer>
             <Component {...pageProps} />
           </ContentContainer>
         </div>

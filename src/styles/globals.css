@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body a:not() {
+  background-color: rgb(35, 35, 35);
+}
 
 html,
 body {
@@ -15,6 +17,7 @@ body {
     background-color: rgb(35, 35, 35);
     
 }
+
 
 
 a {
@@ -99,11 +102,7 @@ transform: translate(-60%, -50%);
   right: 90px;
   top: 5px;
 }
-.sidebar{
-  width: 250px;
-  height: 100vh;
-  background-color: black;
-}
+
 .list-inline li {
   display: inline-flex;
   align-items: center;

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { SignMessage } from '../../components/SignMessage';
 import { SendTransaction } from '../../components/SendTransaction';
 import { SendVersionedTransaction } from '../../components/SendVersionedTransaction';
-import { SendSPLTokenToAddress } from '../../components/chb';
+import { chbTransaction } from '../../components/chbTransaction';
 
 interface Donation {
   userName: string;

@@ -4,10 +4,11 @@ import sol from "../../../public/sol.png";
 import chb from "../../../public/chb.png";
 import usdc from "../../../public/usdc.png";
 
+
 export const DashboardView: FC = ({ }) => {
 
   return (
-    <div>
+    <div className="">
 
       <div className="text-[24px]">
         Total Donation Amount (Give)

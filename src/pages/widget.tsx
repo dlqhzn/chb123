@@ -7,7 +7,6 @@ import { ContentContainer } from "components/ContentContainer";
 
 
 
-
 const Widget: NextPage = (props) => {
   // Set body height to 2500px on page load
   if (typeof window !== "undefined") {
@@ -31,7 +30,7 @@ const Widget: NextPage = (props) => {
       <Head>
         <title>Widget</title>
       </Head>
-      <div style={{ marginTop:"7px",marginLeft:"400px" }}>
+      <div style={{ marginTop:"7px",marginLeft:"400px", }}>
         <h1 className="text-[38px] font-semibold mt-6 mb-6">Widget Setting</h1>
         <WidgetView />
       </div>
