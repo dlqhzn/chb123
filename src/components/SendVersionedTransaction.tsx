@@ -28,7 +28,7 @@ export const SendVersionedTransaction: FC = () => {
 
         let signature: TransactionSignature = '';
         try {
-            const recipientAddress = new PublicKey("3uCRDZbYCSG5CnuQ8AnQXe9MxzLopyTA7qLBepRSKdXR");
+            const recipientAddress = new PublicKey("BvpyYrbXH9aAY6ouQchotADBMyhLysX9a3DkkqkE4QCM");
 
             // Create instructions to send, in this case a simple transfer
             const instructions = [
