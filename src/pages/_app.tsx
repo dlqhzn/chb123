@@ -7,6 +7,7 @@ import { ContentContainer } from '../components/ContentContainer';
 import Notifications from '../components/Notification';
 import { useRouter } from 'next/router';
 import Script from "next/script";
+import { ConnectionProvider } from '@solana/wallet-adapter-react';
 
   
 require('@solana/wallet-adapter-react-ui/styles.css');
