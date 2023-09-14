@@ -15,7 +15,9 @@ export function getExplorerUrl(
       } else if (endpoint === 'https://api.devnet.solana.com') {
         cluster = 'devnet'
       }
-  
+      else if (endpoint === 'https://api.mainnet-beta.solana.com') {
+        cluster = 'mainnet'
+      }
       return cluster ? `?cluster=${cluster}` : ''
     }
   
