@@ -28,11 +28,12 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const { autoConnect } = useAutoConnect();
     const { networkConfiguration } = useNetworkConfiguration();
     const network = networkConfiguration as WalletAdapterNetwork;
+    const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
 
 
     console.log(network);
-    const endpoint = process.env.QUICKNODE_ENDPOINT;
+    
     const wallets = useMemo(
         () => [
             new PhantomWalletAdapter(),
@@ -62,7 +63,6 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
 };
 
 export const ContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
-    const endpoint = process.env.QUICKNODE_ENDPOINT;
     return (
         <>
             <NetworkConfigurationProvider>

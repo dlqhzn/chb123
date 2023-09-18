@@ -15,7 +15,7 @@ export function getExplorerUrl(
       } else if (endpoint === 'https://api.devnet.solana.com') {
         cluster = 'devnet'
       }
-      else if (endpoint === 'https://api.mainnet-beta.solana.com') {
+      else if (endpoint === 'https://blissful-blue-ensemble.solana-mainnet.discover.quiknode.pro/4b46c5f0d4f758922251879ca8728f9220816185/') {
         cluster = 'mainnet'
       }
       return cluster ? `?cluster=${cluster}` : ''
