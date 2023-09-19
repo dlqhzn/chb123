@@ -5,6 +5,7 @@ import { notify } from "../utils/notifications";
 import { TOKEN_PROGRAM_ID, createTransferInstruction } from "@solana/spl-token"; // SPL 토큰 관련 모듈 추가
 
 export const SendVersionedTransaction: FC = () => {
+    
     const { connection } = useConnection();
     const { publicKey, sendTransaction } = useWallet();
     const [userName, setUserName] = useState("");

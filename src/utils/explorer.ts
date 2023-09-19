@@ -18,7 +18,7 @@ export function getExplorerUrl(
           'http://127.0.0.1:8899'
         )}`
       } else if (endpoint === 'https://blissful-blue-ensemble.solana-mainnet.discover.quiknode.pro/4b46c5f0d4f758922251879ca8728f9220816185/') {
-        cluster = 'mainnet-beta'
+        cluster = ''
       }
       return cluster ? `?cluster=${cluster}` : ''
     }
